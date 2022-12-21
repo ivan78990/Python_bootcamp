@@ -1,4 +1,4 @@
-from ex00 import add_ingot
+from ex00 import add_ingot, empty
 
 
 def split_booty(*purses):
@@ -22,3 +22,12 @@ def split_booty(*purses):
         purse_two = add_ingot(purse_two)
         total_ingot -= 1
     return purse_one, purse_two, purse_three
+
+
+if __name__ == "__main__":
+    purse_one = {"melon": 20}
+    purse_two = add_ingot(add_ingot(add_ingot(empty(purse_one))))
+    purse_three = add_ingot(add_ingot(empty(purse_one)))
+    print(purse_one, purse_two, purse_three)
+    print(split_booty(purse_one, purse_two, purse_three))
+
