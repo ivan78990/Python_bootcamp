@@ -25,7 +25,7 @@ def split_booty(*purses):
 
 
 if __name__ == "__main__":
-    purse_one = {"melon": 20}
+    purse_one = {"grape": 9}
     purse_two = add_ingot(add_ingot(add_ingot(empty(purse_one))))
     purse_three = add_ingot(add_ingot(empty(purse_one)))
     print(purse_one, purse_two, purse_three)
